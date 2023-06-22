@@ -21,7 +21,7 @@ public class SecurityConfig {
 				.anyRequest().permitAll() //위 세가지 주소가 아니면 누구나 들어갈 수 있다		
 				.and()
 				.formLogin()
-				.loginPage("/login");  // /user, /admin, /manager치면 다 /login으로 가 => 로그인페이지 만들자ㅇㅇㅇ
+				.loginPage("/login");  // /user, /admin, /manager치면 다 /login으로 가 => 로그인페이지 만들자
 
 		return http.build();
 	}
