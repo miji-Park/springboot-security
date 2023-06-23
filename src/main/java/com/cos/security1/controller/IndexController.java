@@ -65,6 +65,8 @@ public class IndexController {
 		user.setPassword(encPassword);
 		
 		userRepository.save(user); //회원가입 잘 된다 -> 비밀번호가 그냥 1234 => 패스워드 암호화가 안돼서 시큐리티로 로그인 할 수 없음
-		return "redirect:/loginForm"; //redirect를 붙이면 /loginForm이 붙은 함수를 호출해준다 =>loginForm 페이지로 이동!
+    
+		return "redirect:/loginForm"; //redirect: /loginForm(이거 왜 안되지)    redirect를 붙이면 /loginForm이 붙은 함수를 호출해준다 =>loginForm 페이지로 이동!
+
 	}
 }
