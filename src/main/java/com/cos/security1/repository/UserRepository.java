@@ -10,5 +10,5 @@ public interface UserRepository extends JpaRepository<User, Integer>{
 	//findBy 규칙 -> Username 문법
 	//select * from user where username = 1?
 	public User findByUsername(String username); //Jpa 쿼리 메서드를 검색해보자
-
+  
 }

@@ -69,6 +69,7 @@ public class IndexController {
 		
 		userRepository.save(user); //회원가입 잘 된다 -> 비밀번호가 그냥 1234 => 패스워드 암호화가 안돼서 시큐리티로 로그인 할 수 없음
 		return "redirect:/loginForm"; //redirect: /loginForm(이거 왜 안되지)    redirect를 붙이면 /loginForm이 붙은 함수를 호출해준다 =>loginForm 페이지로 이동!
+
 	}
 	
 	@Secured("ROLE_ADMIN") //특정 메서드에 간단하게 하나의 권한만 걸고 싶으면 이렇게 
@@ -83,4 +84,5 @@ public class IndexController {
 	public @ResponseBody String data() {
 		return "데이터정보";
 	}
+
 }
